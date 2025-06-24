@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav .dropdown {
+    margin-right: 20px;
+}
+
+.header .nav .dropdown .dropbtn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
