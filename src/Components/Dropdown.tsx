@@ -20,7 +20,7 @@ function Dropdown({ title, items }: { title: string, items: string[] }) {
             <button className="dropbtn" onClick={handleDropdownClick}>{title}</button>
             <div className="dropdown-content">
                 {items.map((item, index) => (
-                    <a key={index} href="#" onClick={() => handleItemClick(item)}>
+                    <a key={index} href={title} onClick={() => handleItemClick(item)}>
                         {item}
                     </a>
                 ))}

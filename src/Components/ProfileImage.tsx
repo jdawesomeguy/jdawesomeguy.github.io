@@ -14,9 +14,12 @@ function ProfileImage() {
     }
 
     return (
-        <button className="profile-image" onClick={handleProfileClick}>
-            <img src={profile} alt="Profile" />
-        </button>
+        <img
+        src = {profile} // Use the imported profile image
+        alt="Profile"
+        className="profile-image-button" // Apply combined styles here
+        onClick={handleProfileClick} // Replace with your actual click handler
+        />
     );
 }
 

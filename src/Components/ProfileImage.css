@@ -1,5 +1,23 @@
-.profile-image {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+.profile-image-button {
+  /* Size and shape for the image */
+    width: 100px;  /* Fixed width */
+    height: 100px; /* Fixed height */
+    max-width: 100%; /* Ensure it scales down if parent is smaller */
+    max-height: 100%; /* Ensure it scales down if parent is smaller */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 50%; /* Makes it a perfect circle */
+    margin-left: auto;
+
+
+    cursor: pointer; /* Changes cursor to a pointer on hover */
+
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Smooth transitions */
+}
+
+.profile-image-button:hover {
+    opacity: 0.9; /* Slightly dim on hover */
+}
+
+.profile-image-button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
 }

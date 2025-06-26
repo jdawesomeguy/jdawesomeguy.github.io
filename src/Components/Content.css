@@ -1,0 +1,16 @@
+/* Styles for your Content component */
+.content {
+  flex-grow: 1; /* This is the magic! It makes the content expand */
+  overflow-y: auto; /* Add scrollbar if content exceeds available height */
+
+  /* Basic styling for your content */
+  background-color: #387c3a; /* Example background for visualization */
+  padding: 20px;
+}
+
+.content img {
+  max-width: 100%; /* Ensure image fits within content area */
+  height: auto;
+  display: block; /* Remove extra space below image */
+  margin: 0 auto; /* Center the image horizontally if it's smaller than max-width */
+}
