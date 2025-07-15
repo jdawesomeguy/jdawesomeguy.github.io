@@ -1,16 +1,22 @@
 import React from 'react';
 import './App.css';
-// This is the main App component that renders the application.
-import Header from './Components/Header';
-import Content from './Components/Content';
-import test from './Components/CompImages/Test.jpg';
+
+import { Routes, Route } from 'react-router-dom';
+
+import Home from './Pages/Home';
 
 function App() {
   return (
     <div className="App">
-      <Header />
       <main>
-        <Content imageSrc={test} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* Define routes for the dropdown items, replace component when it is created. */}
+          <Route path="/Projects" element={<Home />} />
+          <Route path="/Writings" element={<Home />} />
+          <Route path="/Assorted Ideas" element={<Home />} />
+          {/* Additional routes can be added here */}
+        </Routes>
       </main>
     </div>
   );
