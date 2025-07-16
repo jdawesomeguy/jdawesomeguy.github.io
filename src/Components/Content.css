@@ -8,6 +8,13 @@
   padding: 20px;
 }
 
+.content-text {
+  color: white; /* Text color for better visibility */
+  font-size: 1.2em; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Space between text and image */
+  text-align: center; /* Center the text */
+}
+
 .content img {
   max-width: 100%; /* Ensure image fits within content area */
   height: auto;

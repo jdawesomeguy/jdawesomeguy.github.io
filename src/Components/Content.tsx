@@ -6,10 +6,11 @@ import './Content.css';
 
 // The image should be responsive and fit within the content area.
 
-function Content({ imageSrc }: { imageSrc: string }) {
+function Content({ imageSrc, text }: { imageSrc?: string, text?: string }) {
     return (
         <div className="content">
-            <img src={imageSrc} alt="Content" />
+            {text && <p className="content-text">{text}</p>}
+            {imageSrc && <img src={imageSrc} alt="Content" />}
         </div>
     );
 }

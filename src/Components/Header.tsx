@@ -13,7 +13,7 @@ function Header() {
             <nav className="nav">
                 <Dropdown title="Projects"/>
                 <Dropdown title="Writings"/>
-                <Dropdown title="Assorted Ideas"/>
+                <Dropdown title="Pictures"/>
             </nav>
             <ProfileImage />
         </header>
